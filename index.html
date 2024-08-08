@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Equivalence Class Partitioning</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="ageForm">
+  <h1>Equivalence Class Partitioning (ECP)</h1>
+  <label for="age">AGE</label>
+  <input type="number" id="age" name="age" min="0">
+<button type="submit">Submit</button>
+<p id="message"></p>
+
+  <p>* Accepts value from 18 to 60</p>
+</form>
+  <table>
+    <tr>
+      <th></th>
+      <th>Invalid</th>
+      <th>Valid</th>
+      <th>Invalid</th>
+    </tr>
+    <tr>
+      <th></th>
+      <td>&lt;=17</td>
+      <td>18-60</td>
+      <td>&gt;=61</td>
+    </tr>
+  </table>
+
+  <script src="table.js"></script>
+
+</body>
+</html>
